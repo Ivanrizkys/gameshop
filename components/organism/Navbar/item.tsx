@@ -3,14 +3,14 @@ import Link from "next/link";
 interface PropsItem {
     title: string,
     active?: boolean,
-    link: string
+    href: string
 }
 
-const Item = ({title, active, link }: Partial<PropsItem>) => {
+const Item = ({title, active, href = "/" }: Partial<PropsItem>) => {
 	return (
 		<li className="nav-item my-auto">
-            <Link href={link? link : "/"}>
-                <a className={`nav-link ${active && "active"}`} aria-current="page">
+            <Link href={href}>
+                <a className={`nav-link${active ? " active" : ""}`} aria-current="page">
                     {title}
                 </a>
             </Link>

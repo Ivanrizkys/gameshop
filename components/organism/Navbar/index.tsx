@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Item from "./item";
+import Item from "./Item";
+import Auth from "./Auth";
 
 const Navbar = () => {
     return (
@@ -13,25 +14,12 @@ const Navbar = () => {
                   </button>
                   <div className="collapse navbar-collapse" id="navbarNav">
                       <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
-                          <Item title="Home" active/>
-                          <li className="nav-item my-auto">
-                              <a className="nav-link" href="#">Games</a>
-                          </li>
-                          <li className="nav-item my-auto">
-                              <a className="nav-link" href="#">Rewards</a>
-                          </li>
-
-                          <li className="nav-item my-auto">
-                              <a className="nav-link" href="#">Discover</a>
-                          </li>
-                          <li className="nav-item my-auto me-lg-20">
-                              <a className="nav-link" href="#">Global Rank</a>
-                          </li>
-                          <li className="nav-item my-auto">
-                              <a className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
-                                  href="./src/sign-in.html" role="button">Sign
-                                  In</a>
-                          </li>
+                          <Item title="Home" active href="/"/>
+                          <Item title="Games" href="/"/>
+                          <Item title="Rewards" href="/"/>
+                          <Item title="Discover" href="/"/>
+                          <Item title="Global Rank" href="/"/>
+                          <Auth isLogin/>
                       </ul>
                   </div>
               </div>
