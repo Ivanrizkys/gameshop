@@ -6,7 +6,7 @@ const Member: NextPage = () => {
     return (
         <>
             <section className="overview overflow-auto">
-                <Sidebar />
+                <Sidebar activeProps="overview" />
                 <OverviewContent />
             </section>
         </>
