@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Item from "./Item";
+// import Item from "./Item";
+// import Item from "./Item";
 import Auth from "./Auth";
 
 const Navbar = () => {
@@ -14,11 +15,11 @@ const Navbar = () => {
                   </button>
                   <div className="collapse navbar-collapse" id="navbarNav">
                       <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
-                          <Item title="Home" active href="/"/>
+                          {/* <Item title="Home" active href="/"/>
                           <Item title="Games" href="/"/>
                           <Item title="Rewards" href="/"/>
                           <Item title="Discover" href="/"/>
-                          <Item title="Global Rank" href="/"/>
+                          <Item title="Global Rank" href="/"/> */}
                           <Auth isLogin/>
                       </ul>
                   </div>
