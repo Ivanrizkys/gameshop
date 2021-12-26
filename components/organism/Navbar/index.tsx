@@ -1,7 +1,7 @@
 import Image from "next/image";
 // import Item from "./Item";
-// import Item from "./Item";
 import Auth from "./Auth";
+import NavItem from "./NavItem";
 
 const Navbar = () => {
     return (
@@ -15,11 +15,11 @@ const Navbar = () => {
                   </button>
                   <div className="collapse navbar-collapse" id="navbarNav">
                       <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
-                          {/* <Item title="Home" active href="/"/>
-                          <Item title="Games" href="/"/>
-                          <Item title="Rewards" href="/"/>
-                          <Item title="Discover" href="/"/>
-                          <Item title="Global Rank" href="/"/> */}
+                          <NavItem title="Home" active href="/"/>
+                          <NavItem title="Games" href="/"/>
+                          <NavItem title="Rewards" href="/"/>
+                          <NavItem title="Discover" href="/"/>
+                          <NavItem title="Global Rank" href="/"/>
                           <Auth isLogin/>
                       </ul>
                   </div>
