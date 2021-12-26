@@ -29,13 +29,16 @@ const EditProfile: NextPage = () => {
                                     </div>
                                 </div>
                                 <div className="pt-30">
-                                    <Input label="FullName" placeholder="Enter Your Name" />
+                                    {/* <Input label="FullName" placeholder="Enter Your Name" /> */}
+                                    <Input label="FullName" />
                                 </div>
                                 <div className="pt-30">
-                                    <Input label="Email Adddress" placeholder="Enter your email address" />
+                                    {/* <Input label="Email Adddress" placeholder="Enter your email address" /> */}
+                                    <Input label="Email Adddress"/>
                                 </div>
                                 <div className="pt-30">
-                                    <Input label="Phone" placeholder="Enter your phone number" />
+                                    {/* <Input label="Phone" placeholder="Enter your phone number" /> */}
+                                    <Input label="Phone"/>
                                 </div>
                                 <div className="button-group d-flex flex-column pt-50">
                                     <button type="submit" className="btn btn-save fw-medium text-lg text-white rounded-pill"
